@@ -1,3 +1,22 @@
+@keyframes mymove {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,6 +196,15 @@ p {
   justify-content: space-evenly;
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .headnav nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 10px 0;
+  }
+}
 .headnav nav a {
   font-size: 2rem;
   display: flex;
@@ -239,6 +267,28 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 80px;
+  height: 30px;
+  background-color: #22283A;
+  color: #F6F6F6;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  background-color: aqua;
+  animation-name: mymove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .home .walk .walk-img {
   width: 46%;
