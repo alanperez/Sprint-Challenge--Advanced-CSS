@@ -343,3 +343,80 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.headernav {
+  position: fixed;
+}
+.about-main-container {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.about-main-container .about-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 65%;
+}
+.about-main-container .about-container .astro {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 400px;
+}
+.about-main-container .about-container h1 {
+  color: #23293B;
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px auto;
+}
+.about-main-container .about-container .about-container-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.about-main-container .quick-facts {
+  background-color: #181c1f;
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  top: 465px;
+  width: 1000px;
+  height: 80px;
+  padding: 30px 30px;
+}
+.about-main-container .quick-facts h3 {
+  float: left;
+  margin: 35px 0px;
+  color: #F6F6F6;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 0.8;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.about-main-container .quick-facts table {
+  color: #F6F6F6;
+  font-size: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  /* margin: 0 auto; */
+  /* width: 150px; */
+  /* margin-bottom: 63px; */
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+.about-main-container .quick-facts table tbody {
+  margin: 0 20px;
+}
+.about-main-container .quick-facts table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
