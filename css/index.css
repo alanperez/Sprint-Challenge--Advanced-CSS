@@ -1,0 +1,422 @@
+@keyframes mymove {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.headnav {
+  Width: 100%;
+  background: #F6F6F6;
+}
+.headnav h1 {
+  color: #454A59;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 0;
+}
+.headnav nav {
+  width: 100%;
+  padding: 10px 30%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .headnav nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 10px 0;
+  }
+}
+.headnav nav a {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  color: #454A59;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro .top-img .main-header {
+  border-radius: 6px;
+}
+@media (max-width: 500px) {
+  .home .intro .top-img .main-header {
+    width: 100%;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 90%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 80px;
+  height: 30px;
+  background-color: #22283A;
+  color: #F6F6F6;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  background-color: aqua;
+  animation-name: mymove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 90%;
+    order: -1;
+    margin: 20px auto;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.headernav {
+  position: fixed;
+}
+.about-main-container {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.about-main-container .about-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 65%;
+}
+.about-main-container .about-container .astro {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 400px;
+}
+.about-main-container .about-container h1 {
+  color: #23293B;
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px auto;
+}
+.about-main-container .about-container .about-container-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.about-main-container .quick-facts {
+  background-color: #181c1f;
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  top: 465px;
+  width: 1000px;
+  height: 80px;
+  padding: 30px 30px;
+}
+.about-main-container .quick-facts h3 {
+  float: left;
+  margin: 35px 0px;
+  color: #F6F6F6;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 0.8;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.about-main-container .quick-facts table {
+  color: #F6F6F6;
+  font-size: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  /* margin: 0 auto; */
+  /* width: 150px; */
+  /* margin-bottom: 63px; */
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+.about-main-container .quick-facts table tbody {
+  margin: 0 20px;
+}
+.about-main-container .quick-facts table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
